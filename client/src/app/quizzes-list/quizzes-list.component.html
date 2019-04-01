@@ -1,0 +1,7 @@
+<h2>Select Quiz</h2>
+
+<ul *ngIf='quizzes'>
+  <li *ngFor='let quiz of quizzes'>
+    <a [routerLink]='["/quiz", quiz.id]'>{{quiz.name}}</a>
+  </li>
+</ul>
