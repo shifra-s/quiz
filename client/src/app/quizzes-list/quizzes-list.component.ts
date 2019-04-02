@@ -13,7 +13,6 @@ export class QuizzesListComponent implements OnInit {
   constructor(private quizService: QuizService) { }
 
   ngOnInit() {
-    console.log('RecipeListComponent ngOnInit')
 
     this.quizService.get().subscribe(quizData => {
       this.quizzes = <Quiz[]><any>quizData;
